@@ -1,11 +1,11 @@
 export const UserRole = {
-  Admin: 1,
-  Restaurant: 2,
+  ADMIN: 1,
+  RESTAURANT: 2,
 } as const
 
 export type UserRoleId = (typeof UserRole)[keyof typeof UserRole]
 
 export const UserRoleText = {
-  [UserRole.Admin]: 'Admin',
-  [UserRole.Restaurant]: 'Restaurant',
+  [UserRole.ADMIN]: 'Admin',
+  [UserRole.RESTAURANT]: 'Restaurant',
 }

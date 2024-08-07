@@ -13,12 +13,12 @@ export default class extends BaseSchema {
     this.defer(async (db) => {
       await db.table(this.tableName).multiInsert([
         {
-          id: UserRole.Admin,
-          name: UserRoleText[UserRole.Admin],
+          id: UserRole.ADMIN,
+          name: UserRoleText[UserRole.ADMIN],
         },
         {
-          id: UserRole.Restaurant,
-          name: UserRoleText[UserRole.Restaurant],
+          id: UserRole.RESTAURANT,
+          name: UserRoleText[UserRole.RESTAURANT],
         },
       ])
     })

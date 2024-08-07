@@ -9,13 +9,13 @@ export default class extends BaseSeeder {
         fullName: 'Mems',
         email: 'mems@example.com',
         password: 'secret123',
-        roleId: UserRole.Admin,
+        roleId: UserRole.ADMIN,
       },
       {
         fullName: 'Restaurant',
         email: 'restaurant@example.com',
         password: 'secret123',
-        roleId: UserRole.Restaurant,
+        roleId: UserRole.RESTAURANT,
       },
     ])
   }
