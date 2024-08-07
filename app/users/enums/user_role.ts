@@ -3,7 +3,7 @@ export const UserRole = {
   Restaurant: 2,
 } as const
 
-export type IUserRole = (typeof UserRole)[keyof typeof UserRole]
+export type UserRoleId = (typeof UserRole)[keyof typeof UserRole]
 
 export const UserRoleText = {
   [UserRole.Admin]: 'Admin',
